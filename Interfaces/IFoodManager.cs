@@ -1,12 +1,14 @@
+using System;
+using FDMS_App.models;
 namespace FDMS_App.Interfaces
 {
     public interface IFoodManager
     {
-       public bool ICreateFood (string foodName, double foodPrice);
-       public void IUpdateFood (string foodName, double foodPrice);
-       public void IDeleteFood ();
-       public void IGetFood (string foodName);
-       public void IGetFood (int foodRefNumber);
+       public void CreateFood (string foodName, double foodPrice);
+       public void UpdateFood (string foodName, double foodPrice, string newFoodName, double newFoodPrice );
+       public void DeleteFood (int foodRefNumber);
+       public Food GetFood (string foodName);
+       public Food GetFood (int foodRefNumber);
 
     }
 }

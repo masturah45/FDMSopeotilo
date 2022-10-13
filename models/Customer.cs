@@ -6,11 +6,12 @@ namespace FDMS_App.models
         public string PhoneNumber {get; set;}
         public double Wallet {get; set;}
 
-        public Customer(string address, string phoneNumber, double wallet, string firstName, string lastName, string email, int pin): base (firstName, lastName, email, pin)
+        public Customer(string address, string phoneNumber, string firstName, string lastname, string email, int pin): base (firstName, lastname, email, pin)
         {
             Address = address;
             PhoneNumber = phoneNumber;
-            Wallet = wallet;
+            // Wallet = wallet;
         }
+
     }
 }
